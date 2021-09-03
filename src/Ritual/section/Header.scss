@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+
+  .top-line {
+    height: 5px;
+    background-color: #002f7a;
+  }
+  .header-ritual {
+    font-size: 2rem;
+  }
+  ul {
+    height: 4rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem;
+    border-bottom: 1px solid #8e9091;
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    li {
+      .header-adjustIcon {
+        padding: 25px;
+      }
+      .header-adjustIcon-Who {
+        padding-top: -5px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #0b439e;
+      }
+    }
+  }
+}

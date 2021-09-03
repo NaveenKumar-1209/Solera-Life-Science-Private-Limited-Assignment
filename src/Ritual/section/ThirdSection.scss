@@ -1,0 +1,29 @@
+.Third-section {
+  margin: 3rem 1rem;
+
+  h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #0b439e;
+    font-size: 1.5rem;
+  }
+  .listItem {
+    ul {
+      list-style: none;
+      color: #0b439e;
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin:auto;
+      li {
+        text-align: center;
+        padding: 0.5rem;
+        margin: 1rem;
+        width: 12%;
+        
+      }
+    }
+  }
+}

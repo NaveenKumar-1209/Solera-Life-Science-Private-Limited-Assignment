@@ -1,0 +1,36 @@
+@mixin horizontalLine {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: #0b439e;
+}
+.fifth-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .texted {
+    color: #0b439e;
+    padding: 0 9rem;
+    a{
+        text-decoration: none;
+        color:#0b439e;
+    }
+    #Ingredients:after {
+      @include horizontalLine;
+      width: 175px;
+    }
+    #Clinical:after {
+      @include horizontalLine;
+      width: 152px;
+    }
+    .ForPadding {
+      padding: 1rem;
+    }
+  }
+  .mapImg img{
+    width: 100%;
+    height:35rem;
+  }
+}

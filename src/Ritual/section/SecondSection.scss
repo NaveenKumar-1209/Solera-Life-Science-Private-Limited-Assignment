@@ -1,0 +1,46 @@
+@mixin overlap {
+  width: 95%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.second-section {
+  img {
+    position: relative;
+    @include overlap;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textButton {
+    @include overlap;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    p {
+      font-size: 5rem;
+      color: #131485;
+      font-weight: bold;
+    }
+    button {
+      background-color: #131485;
+      color: #fff;
+      font-weight: bold;
+      width: 40%;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        color: #131485;
+      }
+    }
+  }
+}

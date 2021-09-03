@@ -1,0 +1,39 @@
+.fourth-section {
+  position: relative;
+  .yellowCircle {
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    background-color: #fccf03;
+    transform: translateX(-25%);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .medicine-and-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .medicine-img {
+      img {
+        margin: 3rem 5rem;
+      }
+    }
+    .medicine-img-text{
+      color: #0b439e;
+      padding: 0 7rem;
+      position: relative;
+      h3:after{
+          content: "";
+          display:block;
+          width:102px;
+          height:2px;
+          position:absolute;
+          background: #0b439e;
+      }
+      .instructions{
+          padding:1rem 0;
+      }
+    }
+  }
+}

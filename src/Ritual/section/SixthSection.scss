@@ -1,0 +1,64 @@
+.Sixth-Section {
+  .top-text {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #0b439e;
+    a{
+        text-decoration: none;
+    }
+    h4:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      background: #0b439e;
+    }
+  }
+  ul{
+    width:90%;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    margin:2rem auto;
+    color:#0b439e;
+  }
+  li{
+    text-align:initial;
+    width:25%;
+    padding:0 1rem;
+    .imghover{
+      position:relative;
+      #hoverEffect, h1{
+        display:none;
+        
+      }
+      #normalEffect:hover ~ #hoverEffect{
+        display:block;
+        position:absolute;
+        top:0;
+        cursor: pointer;
+      }
+      #normalEffect:hover ~ h1{
+        display:block;
+        position:absolute;
+        bottom:0;
+        text-align: center;
+        background: #fff;
+        opacity:0.8;
+        width:18rem;
+        margin:0 auto;
+
+
+      }
+    }
+    img{
+      width:18rem;
+      height:18rem;
+      border-radius: 14px;
+    }
+  }
+}
